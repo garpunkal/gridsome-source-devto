@@ -1,7 +1,6 @@
 # @garpunkal/gridsome-source-devto-2022
 
-> Gridsome plugin to retrieve posts from http://dev.to. This package is under development and
-API might change before v1 is released.
+> Gridsome plugin to retrieve posts from http://dev.to. 
 
 ## Install
  
@@ -27,9 +26,7 @@ module.exports = {
       use: '@garpunkal/gridsome-source-devto-2022',
       options: {
         typeName: 'Article',
-        username:'DEVTO_USERNAME', //change username
         apiKey: process.env.DEVTO_API_KEY, //get your API key from https://dev.to/settings/account
-        route: '/:slug',
       }
     }
   ]
@@ -40,8 +37,6 @@ module.exports = {
 
 ## Loop Query
 Inside  `<page-query>` add the following query to get all articles from http://dev.to
-
-
 
 
 <details open>
