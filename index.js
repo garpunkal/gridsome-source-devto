@@ -18,7 +18,7 @@ module.exports = function(api,options){
     throw new Error(`You have not set the route option for the articles.`);
   }
 
-  const devtoURL = `https://dev.to/api/articles?api-key=${options.apiKey}&username=${options.username}`;
+  const devtoURL = `https://dev.to/api/articles/me/published?api-key=${options.apiKey}`;
 
   api.loadSource(async store => {
     store.addContentType({
@@ -35,7 +35,7 @@ module.exports = function(api,options){
    */
   getArticles = async (store,page=1)=> {
     const articles = store.getContentType(options.typeName)
-    let response = await axios.get(devtoURL,{params:{page:page}});
+    let response = await axios.get(devtoURL,{params:{page:page}, headers: { 'api-key': options.apiKey}});
     let posts = response.data;
     if(posts.length>=30 && posts.length!==0){
       getArticles(store,++page);
