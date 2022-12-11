@@ -31,7 +31,6 @@ module.exports = function(api,options){
 
   /**
    * get latest articles from https://dev.to
-   * TODO: refactor this function
    */
   getArticles = async (store,page=1)=> {
     const articles = store.getContentType(options.typeName)
@@ -46,7 +45,4 @@ module.exports = function(api,options){
       articles.addNode({...post})
     }
   }
-
- 
-
 }
