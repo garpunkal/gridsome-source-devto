@@ -1,4 +1,4 @@
-# @perlatsp/gridsome-source-devto
+# @garpunkal/gridsome-source-devto-2022
 
 > Gridsome plugin to retrieve posts from http://dev.to. This package is under development and
 API might change before v1 is released.
@@ -6,11 +6,11 @@ API might change before v1 is released.
 ## Install
  
  ```bash
- yarn add @perlatsp/gridsome-source-devto
+ yarn add @garpunkal/gridsome-source-devto-2022
  ```
 or 
 ```bash
-npm install @perlatsp/gridsome-source-devto
+npm install @garpunkal/gridsome-source-devto-2022
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ module.exports = {
   plugins: [
     ...other gridsome plugins
    {
-      use: '@perlatsp/gridsome-source-devto',
+      use: '@garpunkal/gridsome-source-devto-2022',
       options: {
         typeName: 'Article',
         username:'DEVTO_USERNAME', //change username
@@ -141,13 +141,6 @@ query Post($path: String!) {
 ```
 
  </details>
-
-
-## TODO
-- [x] Get posts
-- [ ] Create pagination
-- [ ] Refactor
-- [ ] ADD NEW FEATURE HERE 
 
 
 Feel free to use this plugin.
