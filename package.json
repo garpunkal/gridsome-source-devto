@@ -1,12 +1,12 @@
 {
-  "name": "@garpunkal/gridsome-source-devto-2022",
-  "version": "0.1.1",
-  "description": "https://dev.to source plugin for gridsome",
+  "name": "@garpunkal/gridsome-source-devto",
+  "version": "0.1.2",
+  "description": "dev.to source plugin for gridsome",
   "main": "index.js",
-  "homepage": "https://github.com/garpunkal/gridsome-source-devto-2022#readme",
+  "homepage": "https://github.com/garpunkal/gridsome-source-devto#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garpunkal/gridsome-source-devto-2022.git"
+    "url": "git+https://github.com/garpunkal/gridsome-source-devto.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,6 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/garpunkal/gridsome-source-devto-2022/issues"
+    "url": "https://github.com/garpunkal/gridsome-source-devto/issues"
   }
 }
